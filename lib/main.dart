@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:greenery/Containers/HomePageScreen/MyHomePageScreen.dart';
+import 'package:greenery/Containers/ProductPageScreen/ProductPageScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePageScreen(),
+      home: ProductPageScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
