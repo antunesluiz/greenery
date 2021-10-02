@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:greenery/Containers/ProductPageScreen/ProductPageScreen.dart';
+import 'package:greenery/Themes/Colors.dart';
+import 'package:greenery/screens/HomeScreen/HomeScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,9 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Greenery',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: greenColor,
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        scaffoldBackgroundColor: kBackgroundColor,
       ),
-      home: ProductPageScreen(),
+      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

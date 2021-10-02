@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:greenery/Containers/ProductPageScreen/ProductOverviewPageScreen.dart';
+import 'package:greenery/Screens/ProductOverviewScreen/ProductOverviewScreen.dart';
 import 'package:greenery/Themes/Colors.dart';
 import 'package:greenery/Themes/Images.dart';
 
-class ProductPageScreen extends StatelessWidget {
+class ProductScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +82,7 @@ class ProductPageScreen extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) =>
-                                        ProductOverviewPageScreen(),
+                                        ProductOverviewScreen(),
                                   ),
                                 );
                               },

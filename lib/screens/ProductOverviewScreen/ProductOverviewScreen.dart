@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:greenery/Themes/Colors.dart';
 
-class ProductOverviewPageScreen extends StatelessWidget {
+class ProductOverviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
