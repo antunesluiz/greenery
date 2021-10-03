@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greenery/screens/ProductScreen/ProductScreen.dart';
 import 'package:greenery/themes/Colors.dart';
 import 'package:greenery/themes/Constants.dart';
 
@@ -18,7 +19,14 @@ class RecommendedPlants extends StatelessWidget {
             country: 'Russia',
             price: 444,
             title: 'Samantha',
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProductScreen(),
+                ),
+              );
+            },
           ),
           RecommendPlantCard(
             image: 'assets/images/image_2.png',
@@ -97,10 +105,11 @@ class RecommendPlantCard extends StatelessWidget {
                           style: Theme.of(context).textTheme.button,
                         ),
                         TextSpan(
-                            text: "$country".toUpperCase(),
-                            style: TextStyle(
-                              color: greenColor.withOpacity(0.5),
-                            ))
+                          text: "$country".toUpperCase(),
+                          style: TextStyle(
+                            color: greenColor.withOpacity(0.5),
+                          ),
+                        )
                       ],
                     ),
                   ),

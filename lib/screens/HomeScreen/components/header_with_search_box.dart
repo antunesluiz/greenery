@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greenery/Themes/Colors.dart';
-import 'package:greenery/Themes/Constants.dart';
+import 'package:greenery/themes/Constants.dart';
 
 class HeaderWithSearchBox extends StatelessWidget {
   const HeaderWithSearchBox({
@@ -50,7 +50,10 @@ class HeaderWithSearchBox extends StatelessWidget {
             child: Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-              padding: EdgeInsets.only(left: kDefaultPadding),
+              padding: EdgeInsets.only(
+                left: kDefaultPadding,
+                right: kDefaultPadding,
+              ),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
